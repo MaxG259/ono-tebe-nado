@@ -164,7 +164,7 @@
 
 .lots__card-list {
   display: flex;
-  flex-wrap: wrap; /*изучить этой свойство лучше */
+  flex-wrap: wrap; /*перенос карточки на новый ряд при добавление карточки*/
   padding-top: 27px;
   gap: 25px;
 }
@@ -172,11 +172,17 @@
 .lots__card-list-item {
   position: relative;
   width: 334px;
-  min-height: 563px;
+  min-height: 100%/*563px*/;
   flex-grow: 1;
+  list-style: none;
   background-position: center; /*разместили картинку по центру*/
   background-repeat: no-repeat;
   background-size: cover; /*разместили картинку по всей области как обложка*/
+  
+}
+
+.lots_none-under {
+  text-decoration: none;
 }
 
 .card-link {
@@ -184,6 +190,7 @@
 }
 
 .card {
+  position: relative;
   height: 100%;
   padding: 48px 40px;
   display: flex;
@@ -276,7 +283,7 @@
 
 .footer__address {
   text-align: left;
-  margin: 150px 0 10px 50px;
+  margin: 150px 0 0 50px;
 }
 
 .footer__menu {
@@ -284,7 +291,7 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 21.13px;
-  margin: 150px 0 10px 40px;
+  margin: 150px 0 0 40px;
 }
 
 .footer__menu-list {
