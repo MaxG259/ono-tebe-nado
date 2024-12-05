@@ -167,6 +167,7 @@
   flex-wrap: wrap; /*перенос карточки на новый ряд при добавление карточки*/
   padding-top: 27px;
   gap: 25px;
+  list-style-type: none; /*убрал буллиты (пункты/точки которые ставяться при создания списка*/
 }
 
 .lots__card-list-item {
@@ -179,10 +180,6 @@
   background-repeat: no-repeat;
   background-size: cover; /*разместили картинку по всей области как обложка*/
   
-}
-
-.lots_none-under {
-  text-decoration: none;
 }
 
 .card-link {
