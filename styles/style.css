@@ -222,8 +222,9 @@
   line-height: 23.48px;
   text-decoration: underline; /*подчеркнул текст*/
   text-underline-offset: 5px; /*сместил нижнее подчеркивание чуть ниже, как в макете*/
-  margin-top: 30px;
+  margin-top: 26px;
   margin-left: 40px;
+  display: flex;
 }
 
 .about {
@@ -274,6 +275,7 @@
 }
 
 .footer {
+  margin-bottom: 88px;
   display: flex;
   justify-content: space-between;
 }
@@ -299,7 +301,6 @@
 
 /*.footer__menu-list-item {
 }*/
-
 /*.footer__menu-link {
 }*/
 
@@ -327,5 +328,3 @@
   width: 48px;
   height: 48px;
 }
-
-/* сделал репозиторий публичным*/
